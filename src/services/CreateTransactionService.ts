@@ -32,9 +32,9 @@ class CreateTransactionService {
     const categoryExist = await categoryRepository.findOne({
       where: { title: category },
     });
-
     let categoryId = categoryExist?.id;
     if (!categoryExist) {
+
       const newCategory = await categoryRepository.create({
         title: category,
       });

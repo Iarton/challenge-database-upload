@@ -37,6 +37,9 @@
       {
         "ts": "never"
       }
+    ],
+    "no-restricted-syntax": [
+      "ForOfStatement"
     ]
   },
   "settings": {
